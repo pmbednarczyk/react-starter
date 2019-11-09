@@ -1,0 +1,38 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/react"
+  ],
+  "env": {
+    "development": {
+      "plugins": []
+    },
+    "production": {
+      "plugins": []
+    },
+    "test": {
+      "plugins": []
+    }
+  },
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "extensions": [
+        ".js", ".svg"
+      ],
+      "alias": {
+        "components": "./src/components",
+        "containers": "./src/containers",
+        "theme": "./src/theme",
+        "modules":  "./src/redux/modules",
+        "sagas":  "./src/redux/sagas",
+        "infrastructure":  "./src/infrastructure"
+      }
+    }],
+    ["@babel/plugin-transform-regenerator"],
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-syntax-import-meta",
+    ["@babel/plugin-proposal-class-properties", { "loose": false }],
+    "@babel/plugin-proposal-json-strings"
+  ]
+}

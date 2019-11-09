@@ -1,0 +1,59 @@
+{
+  "name": "react-starter",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.1.2",
+    "redux": "4.0.4",
+    "redux-axios-middleware": "^4.0.0",
+    "redux-saga": "^1.0.3",
+    "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot",
+    "build": "rimraf out && webpack --mode production --env production",
+    "build:analyze": "cross-env ANALYZER=1 npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-json-strings": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/plugin-transform-regenerator": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.7.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "css-loader": "^3.0.0",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "prop-types": "^15.7.2",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.34.0",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "browserslist": [
+    "> 0.25%",
+    "not dead"
+  ]
+}
